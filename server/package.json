@@ -1,0 +1,24 @@
+{
+  "name": "bakman",
+  "version": "1.0.0",
+  "description": "Water Management Tool",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Lino Gomez",
+  "license": "ISC",
+  "devDependencies": {
+    "morgan": "^1.7.0",
+    "nodemon": "^1.9.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "lodash": "^4.13.1",
+    "method-override": "^2.3.6",
+    "mongodb": "^2.1.18",
+    "mongoose": "^4.4.19"
+  }
+}

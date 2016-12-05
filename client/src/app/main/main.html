@@ -1,0 +1,67 @@
+<md-content layout-padding id="home" class="container">
+  <!--TODO: break the navigation out into a directive-->
+  <nav layout-xs="column">
+    <div class="logo" flex>
+      <img src="../assets/images/logo.png" alt="">
+      <span>Hookitup</span>
+    </div>
+    <ul layout-xs="column" flex>
+      <li flex><a href="">Companies</a></li>
+      <li flex><a href="">Services</a></li>
+      <li flex><a href="">About</a></li>
+      <li flex><a href="">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="search" layout="row" layout-xs="column">
+    <h2 flex>Find Your Job</h2>
+    <md-input-container flex>
+      <label>Position Title</label>
+      <input placeholder="e.g. Glass Blower">
+    </md-input-container>
+    <md-input-container flex>
+      <label>City</label>
+      <input placeholder="e.g. San Francisco">
+    </md-input-container>
+    <md-button class="md-raised search-button" flex>
+      Search
+    </md-button>
+  </div>
+
+  <!--<div class="ui-container" ui-view></div>-->
+
+  <!--TODO: make this an actual count of the job results shown-->
+  <small>Displaying 20 of 100 job results</small>
+
+  <div class="job-board" ng-repeat="company in main.companies" flex>
+    <div layout="row" layout-xs="column">
+      <div class="photo" flex="10">
+        <img src="http://placehold.it/55x55">
+      </div>
+      <div class="text" layout="column" flex="90">
+        <div class="company-info">
+          <a class="name" ui-sref="company">{{company.name}}</a>
+          <div class="tagline">{{company.tagline}}</div>
+        </div>
+        <div class="job-info">
+            <div class="job">
+              <div class="title">
+                <a ui-sref="job">Marketing Coordinator/Supervisor</a>
+                <div class="compensation">$35k - $45k · 0.0 - 0.5%</div>
+              </div>
+              <div class="description">As a relatively new organization, the role of the Marketing Coordinator/Supervisor will be both highly varying and evolving. The role will include helping with plan generation as well as actual execution. Being a small team, we rely on everyone to...</div>
+              <div class="tags">Full Time · Toronto</div>
+            </div>
+            <div class="job">
+              <div class="title">
+                <a href="https://angel.co/tokyo-smoke/jobs/153922-project-manager">Project Manager</a>
+                <div class="compensation">$35k - $50k · 0.0 - 0.5%</div>
+              </div>
+              <div class="description">Tokyo Smoke is a modern lifestyle collective providing a home for the creative class in Cannabis. Cannabis, unlike other consumer verticals, has not yet evolved to meet the needs, both in terms of quality and design/aesthetic, of today’s consumer....</div>
+              <div class="tags">Full Time · Toronto</div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</md-content>
