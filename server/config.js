@@ -1,3 +1,3 @@
 module.exports = {
-  mongodbUrl: 'mongodb://localhost:27017/bakmandb'
+  mongodbUrl: 'mongodb://root:1234@ds119588.mlab.com:19588/mommy'
 }

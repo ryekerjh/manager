@@ -16,6 +16,8 @@
   "dependencies": {
     "body-parser": "^1.15.1",
     "express": "^4.13.4",
+    "google-auth-library": "^0.9.10",
+    "googleapis": "^14.2.0",
     "lodash": "^4.13.1",
     "method-override": "^2.3.6",
     "mongodb": "^2.1.18",
